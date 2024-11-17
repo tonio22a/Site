@@ -1,0 +1,24 @@
+body {
+    font-family: 'Inter', sans-serif;; /* Семейство шрифтов */
+    font-size: 15px; /* Размер основного шрифта в <p></p> */
+    background-color: #221d1d; /* Темный фон для контраста */
+    color: #FFFFFF; /* Светлый цвет основного текста */
+    font-weight: bold;
+}
+
+h1 {
+    color: #5988FF; /* Неоновый синий для заголовка */
+    font-size: 24px; /* Размер шрифта в пунктах */
+    text-shadow: 0 0 1000px #5988FF, 0 0 1px #5988FF, 0 0 10px #5988FF; /* Неоновый синий свет */
+}
+
+h2 {
+    color: #FD98FB; /* Неоновый розовый */
+    font-size: 24px;
+    text-shadow: 0 0 1000px #FD98FB, 0 0 1px #FD98FB, 0 0 10px #FD98FB; /* Неоновый розовый свет */
+}
+
+p {
+    color: #D6FF6B; /* Неоновый розовый */
+    text-shadow: 0 0 1000px #D6FF6B, 0 0 1px #D6FF6B, 0 0 10px #D6FF6B; /* Неоновый розовый свет */
+}

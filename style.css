@@ -6,19 +6,82 @@ body {
     font-weight: bold;
 }
 
+@keyframes color-change {
+    0% {
+      color: blue; text-shadow: 0 0 1000px #0000ff, 0 0 1px #0000ff, 0 0 10px #0000ff
+    }
+  
+    50% {
+      color: red; text-shadow: 0 0 1000px #ff0000, 0 0 1px #ff0000, 0 0 10px #ff0000
+    }
+  
+    70% {
+      color: #0000ff; text-shadow: 0 0 1000px #0000ff, 0 0 1px #0000ff, 0 0 10px #0000ff
+    }
+}
+
+@keyframes color-change2 {
+    0% {
+      color: #FD98FB; text-shadow: 0 0 1000px #FD98FB, 0 0 1px #FD98FB, 0 0 10px #FD98FB
+    }
+  
+    50% {
+      color: red; text-shadow: 0 0 1000px #ff0000, 0 0 1px #ff0000, 0 0 10px #ff0000
+    }
+  
+    70% {
+      color: #FD98FB; text-shadow: 0 0 1000px #FD98FB, 0 0 1px #FD98FB, 0 0 10px #FD98FB
+    }
+}
+
 h1 {
-    color: #5988FF; /* Неоновый синий для заголовка */
-    font-size: 24px; /* Размер шрифта в пунктах */
-    text-shadow: 0 0 1000px #5988FF, 0 0 1px #5988FF, 0 0 10px #5988FF; /* Неоновый синий свет */
+    animation: color-change 4s infinite;
 }
 
 h2 {
     color: #FD98FB; /* Неоновый розовый */
     font-size: 24px;
-    text-shadow: 0 0 1000px #FD98FB, 0 0 1px #FD98FB, 0 0 10px #FD98FB; /* Неоновый розовый свет */
+    text-shadow: 0 0 1000px #FD98FB, 0 0 1px #FD98FB, 0 0 10px #FD98FB;
+
+    animation: color-change2 4s infinite; /* Неоновый розовый свет */
 }
 
 p {
     color: #D6FF6B; /* Неоновый розовый */
     text-shadow: 0 0 1000px #D6FF6B, 0 0 1px #D6FF6B, 0 0 10px #D6FF6B; /* Неоновый розовый свет */
 }
+
+aas {
+    color: #fbfbfb; /* Неоновый розовый */
+    text-shadow: 0 0 1000px #fefefe, 0 0 1px #ffffff, 0 0 10px #f7f7f6; /* Неоновый розовый свет */
+}
+
+a {
+    color: #D6FF6B; /* Неоновый розовый */
+    text-shadow: 0 0 1000px #D6FF6B, 0 0 1px #D6FF6B, 0 0 10px #D6FF6B; /* Неоновый розовый свет */
+}
+
+        /* Добавляем стиль для белого блока */
+        .weather-widget {
+            background-color: white; /* Цвет фона белый */
+            padding: 20px; /* Отступы внутри блока */
+            border-radius: 10px; /* Закругленные углы */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для блока */
+            display: inline-block; /* Чтобы блок не занимал всю ширину */
+            position: absolute; /* Позиционирование для перемещения влево */
+            left: 20px; /* Отступ от левого края */
+            top: 150px; /* Отступ от верхнего края */
+        }
+
+         /* Добавляем стиль для белого блока */
+         .clockmos {
+            
+            padding: 20px; /* Отступы внутри блока */
+            border-radius: 10px; /* Закругленные углы */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для блока */
+            display: inline-block; /* Чтобы блок не занимал всю ширину */
+            position: absolute; /* Позиционирование для перемещения влево */
+            left: 50px; /* Отступ от левого края */
+            top: 600px; /* Отступ от верхнего края */
+        }
+
